@@ -31,4 +31,18 @@ public class ServerHandle
 
         Server.clients[_fromClient].player.UpdatePosition(position, rotation);
     }
+
+    public static void CurrentWeapon(int _fromClient, Packet _packet)
+    {
+        int weaponId = _packet.ReadInt();
+
+        Server.clients[_fromClient].player.ActivateWeapon(weaponId);
+    }
+    
+    public static void CameraRotation(int _fromClient, Packet _packet)
+    {
+        Quaternion rotation = _packet.ReadQuaternion();
+
+        Server.clients[_fromClient].player.WeaponsRotation(rotation);
+    }
 }

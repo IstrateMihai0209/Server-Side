@@ -115,7 +115,7 @@ public class ServerSend
             packet.Write(_position);
             packet.Write(_rotation);
 
-            SendUDPDataToAll(_id ,packet);
+            SendUDPDataToAll(_id, packet);
         }
     }
 
@@ -126,6 +126,28 @@ public class ServerSend
             packet.Write(_playerId);
 
             SendTCPDataToAll(packet);
+        }
+    }
+
+    public static void PlayerWeapon(int _playerId, int _weaponId)
+    {
+        using(Packet packet = new Packet((int)ServerPackets.playerWeapon))
+        {
+            packet.Write(_playerId);
+            packet.Write(_weaponId);
+
+            SendTCPDataToAll(packet);
+        }
+    }
+
+    public static void PlayerWeaponRotation(int _playerId, Quaternion _rotation)
+    {
+        using (Packet packet = new Packet((int)ServerPackets.playerWeaponRotation))
+        {
+            packet.Write(_playerId);
+            packet.Write(_rotation);
+
+            SendUDPDataToAll(_playerId, packet);
         }
     }
 }
