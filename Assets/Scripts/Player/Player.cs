@@ -7,9 +7,10 @@ public class Player : MonoBehaviour
 
     public string message;
 
+    [SerializeField] private GameObject LookRoot;
+    [SerializeField] private GameObject weaponsObj;
     [SerializeField] private GameObject carbineObj;
     [SerializeField] private GameObject smgObj;
-    [SerializeField] private GameObject weaponsObj;
 
     public void Initialize(int _id, string _username)
     {
@@ -56,6 +57,13 @@ public class Player : MonoBehaviour
         weaponsObj.transform.localRotation = _rotation;
 
         ServerSend.PlayerWeaponRotation(id, weaponsObj.transform.localRotation);
+    }
+
+    public void WeaponCameraRecoil(Vector3 _recoilRotation)
+    {
+        LookRoot.transform.localRotation = Quaternion.Euler(_recoilRotation);
+
+        ServerSend.PlayerCameraRecoil(id, _recoilRotation);
     }
 }
 

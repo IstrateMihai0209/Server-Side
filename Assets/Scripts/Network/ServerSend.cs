@@ -150,4 +150,15 @@ public class ServerSend
             SendUDPDataToAll(_playerId, packet);
         }
     }
+
+    public static void PlayerCameraRecoil(int _playerId, Vector3 _recoilRotation)
+    {
+        using(Packet packet = new Packet((int)ServerPackets.playerCameraRecoil))
+        {
+            packet.Write(_playerId);
+            packet.Write(_recoilRotation);
+
+            SendUDPDataToAll(_playerId, packet);
+        }
+    }
 }

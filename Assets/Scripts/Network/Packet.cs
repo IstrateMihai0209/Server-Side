@@ -12,6 +12,7 @@ public enum ServerPackets
     playerPositionToAll,
     playerWeapon,
     playerWeaponRotation,
+    playerCameraRecoil,
 }
 
 /// <summary>Sent from client to server.</summary>
@@ -21,6 +22,7 @@ public enum ClientPackets
     playerPosition,
     currentWeapon,
     cameraRotation,
+    cameraRecoil,
 }
 
 /// <summary>

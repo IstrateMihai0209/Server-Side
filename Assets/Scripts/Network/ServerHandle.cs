@@ -45,4 +45,11 @@ public class ServerHandle
 
         Server.clients[_fromClient].player.WeaponsRotation(rotation);
     }
+
+    public static void CameraRecoil(int _fromClient, Packet _packet)
+    {
+        Vector3 recoilRotation = _packet.ReadVector3();
+
+        Server.clients[_fromClient].player.WeaponCameraRecoil(recoilRotation);
+    }
 }

@@ -131,6 +131,7 @@ public class Server
                 { (int)ClientPackets.playerPosition, ServerHandle.PlayerPosition },
                 { (int)ClientPackets.currentWeapon, ServerHandle.CurrentWeapon},
                 { (int)ClientPackets.cameraRotation, ServerHandle.CameraRotation},
+                { (int)ClientPackets.cameraRecoil, ServerHandle.CameraRecoil},
             };
 
         LogManager.WriteInfo("Initialized packets");
