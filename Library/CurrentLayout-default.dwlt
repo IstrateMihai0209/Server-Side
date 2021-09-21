@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 131
+  controlID: 127
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 110
+  controlID: 80
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 111
+  controlID: 81
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Player
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mihai\OneDrive\Desktop\Server\Server
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00490000
-    m_LastClickedID: 18688
-    m_ExpandedIDs: 00000000f2480000fe48000000ca9a3b
+    m_SelectedIDs: f2480000
+    m_LastClickedID: 18674
+    m_ExpandedIDs: 00000000f248000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.677708, y: -15.313594, z: 3.2371502}
+    m_Target: {x: 8.402908, y: -12.534274, z: 4.7046013}
     speed: 2
-    m_Value: {x: 7.677708, y: -15.313594, z: 3.2371502}
+    m_Value: {x: 8.402908, y: -12.534274, z: 4.7046013}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,9 +592,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.27789092, y: 0.02948099, z: -0.008295818, w: -0.9601621}
+    m_Target: {x: -0.19496387, y: 0.0065472694, z: -0.001063488, w: -0.9808253}
     speed: 2
-    m_Value: {x: -0.27788085, y: 0.02947992, z: -0.008295517, w: -0.9601273}
+    m_Value: {x: -0.19495673, y: 0.0065470296, z: -0.0010634491, w: -0.9807894}
   m_Size:
     m_Target: 9.162695
     speed: 2
